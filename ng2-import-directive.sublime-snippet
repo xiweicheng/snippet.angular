@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+import { Directive, ElementRef, Input, Output, Renderer, EventEmitter } from '@angular/core';
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ng2-import-directive</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>
