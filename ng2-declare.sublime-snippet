@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+import { cons, ctx, env, api } from 'config';
+
+declare var \$: any;  // 定义jquery
+declare var _: any;  // 定义lodash
+declare var toastr: any; // 定义消息提示
+declare var wurl: any; // 定义URL操作
+declare var Cookie: any; // 定义Cookie操作
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ng2-declare</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>
