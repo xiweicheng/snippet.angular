@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+this.api.get((<any>window).api.${1:})
+			.map((data: any) => {
+				return data || {};
+			});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cm-http-get</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+let subscriber = (<any>window).PubSub.subscribe((<any>window).cons.${1:}, (msg: any, data: any) => {
+            ${2:}
+        });
+        // unsubscribe this subscriber from this topic 
+        (<any>window).PubSub.unsubscribe(subscriber);
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>cm-sub</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>
