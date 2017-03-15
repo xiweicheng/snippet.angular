@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-(click)="${1:click}Handler(\$event)" 
+import { cons, ctx, env, api } from 'config';
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>ng2-click</tabTrigger>
+	<tabTrigger>ng2-import-config</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<scope>source.ts</scope>
 </snippet>
