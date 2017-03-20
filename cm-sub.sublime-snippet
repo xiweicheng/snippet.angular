@@ -1,10 +1,10 @@
 <snippet>
 	<content><![CDATA[
-let subscriber = (<any>window).PubSub.subscribe((<any>window).cons.${1:}, (msg: any, data: any) => {
+this.subscriber = (<any>window).PubSub.subscribe((<any>window).cons.${1:}, (msg: any, data: any) => {
             ${2:}
         });
         // unsubscribe this subscriber from this topic 
-        (<any>window).PubSub.unsubscribe(subscriber);
+        (<any>window).PubSub.unsubscribe(this.subscriber);
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>cm-sub</tabTrigger>
