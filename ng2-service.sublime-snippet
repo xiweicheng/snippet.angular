@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
+import { ApiService } from 'app/base/api.service';
+import { ctx, api } from 'config';
+
+@Injectable()
+export class ${1:XxService} {
+
+	constructor(private api: ApiService) {
+	}
+
+	get(): Observable<any> {
+		return this.api.get(api.${2:api_key})
+			.map((data: any) => {
+				return data || {};
+			});
+	}
+
+	post(): Observable<any> {
+		return this.api.post(api.${3:api_key}, {})
+			.map((data: any) => {
+				return data;
+			});
+	}
+
+}
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ng2-service</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.ts</scope>
+</snippet>

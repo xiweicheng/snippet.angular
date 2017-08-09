@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-(click)="${1:click}Handler(\$event)" 
+(click)="${1:click}Handler(\$event)"
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>ng2-click</tabTrigger>
